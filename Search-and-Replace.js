@@ -11,10 +11,10 @@ NOTE: Preserve the case of the original word when you are replacing it. For exam
 
 function myReplace(str, before, after) {
 
-    return str.replace(before, function (beforeMatch) {
+    return str.replace(before, function () {
 
         //check if the first character is uppercase if so, capitalise it
-        var firstChar = beforeMatch.substring(0, 1);
+        var firstChar = before.substring(0, 1);
         if (firstChar == firstChar.toUpperCase()) {
 
             return after[0].toUpperCase() + after.slice(1);
