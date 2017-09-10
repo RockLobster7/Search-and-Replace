@@ -17,7 +17,7 @@ function myReplace(str, before, after) {
         var firstChar = beforeMatch.substring(0, 1);
         if (firstChar == firstChar.toUpperCase()) {
 
-            return after[0].toUpperCase() + after.substring(1, after.length);
+            return after[0].toUpperCase() + after.slice(1);
         } else {
             return after;
         }
